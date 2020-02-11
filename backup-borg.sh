@@ -5,22 +5,22 @@
 ##################
 
 # IP of your NAS
-REMOTE_IP=192.168.1.10
+REMOTE_IP=mygoflex.local
 
 # User of the NAS
 REMOTE_USER=gp2mv3
 
 # Remote directory (destination of the backup)
-REMOTE_FOLDER=/home/gp2mv3/borg
+REMOTE_FOLDER=/data/backup/borg
 
 # Directory to backup
-LOCAL_DIR=/home/$REMOTE_USER/Programmation/borg-script
+LOCAL_DIR=/home/$REMOTE_USER
 
 # Backup name (Default is HOSTNAME-YYY-MM-DD)
-BCK_NAME=$(hostname)-$(date +%F)-t
+BCK_NAME=$(hostname)-$(date +%F)
 
 # Passphrase of the backup
-export BORG_PASSPHRASE='fcgJLKvgRErBCEffV6VJ0pEGCEtKt9G9Bcov63R9eZnPfuhP'
+export BORG_PASSPHRASE='YOURPASSPHRASE'
 
 
 ###################
